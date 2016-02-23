@@ -29,7 +29,7 @@ a:hover {
 header ul {
   float: right;
   padding: 5;
-  width: 16%;
+  /*width: 16%;*/
   color: #DBDEE3;
 }
 header ul li, footer ul li {
@@ -74,5 +74,5 @@ footer {
   color: #DBDEE3;
 }
 .social {
-  padding: 1.5%;
+  padding: 20;
 }
