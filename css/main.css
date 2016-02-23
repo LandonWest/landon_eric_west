@@ -1,1 +1,78 @@
 /* Main CSS */
+html, body, div, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, san-serif;
+}
+h2 {
+  margin-bottom: 1em;
+  color: grey;
+}
+h3 {
+  margin-bottom: 4;
+}
+p {
+  margin-bottom: 1em;
+  line-height: 1.5;
+  /*color: grey;*/
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+header ul {
+  float: right;
+  padding: 5;
+  width: 16%;
+  color: #DBDEE3;
+}
+header ul li, footer ul li {
+  display: inline;
+  padding-right: 1em;
+}
+header ul:last-child {
+  padding-right: 2.5em;
+}
+header a:hover, footer a:hover {
+  color: white;
+}
+.banner {
+  height: 560px;
+  background: #728E92 url("../images/Alcatraz.jpg");
+  margin-bottom: 3em;
+}
+.headline h1 {
+  display: inline-block;
+  padding: 3% 3.5% 0 3.5%;
+  font-size: 6em;
+  font-weight: bold;
+  color: #ffffff;
+}
+.headline p {
+  display: inline-block;
+  padding: 1.8% 2% 0 15%;
+  font-size: 2em;
+  font-weight: 200;
+  color: #ffffff;
+}
+.content {
+  max-width: 70%;
+  margin: 0 auto 3em auto;
+  /*background-color: #DBDEE3;*/
+}
+footer {
+  background: #5780C0 url("../images/concrete_wall.png");
+  height: 8em;
+  text-align: center;
+  padding-top: 2em;
+  color: #DBDEE3;
+}
+.social {
+  padding: 1.5%;
+}
