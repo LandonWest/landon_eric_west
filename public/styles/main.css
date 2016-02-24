@@ -7,6 +7,11 @@ html, body, div, h1, h2, h3, p, ul, li {
 body {
   font-family: "Helvetica Neue", Helvetica, san-serif;
 }
+h1  {
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: normal;
+}
 h2 {
   margin-bottom: 1em;
   color: grey;
@@ -14,15 +19,29 @@ h2 {
 p {
   margin-bottom: 1em;
   line-height: 1.5;
+  text-align: left;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+ul {
+  list-style: none;
+}
+.inner-ul {
+  padding: 0 0 2em 2em;
+  list-style: circle;
+  line-height: 1.5;
+}
+.centered {
+  text-align: center;
+}
+.right {
+  float: right;
+}
 header ul {
   float: right;
   padding: 5;
-  /*width: 16%;*/
   color: #DBDEE3;
 }
 header ul li, footer ul li {
@@ -57,13 +76,24 @@ header a:hover, footer a:hover {
 .content {
   max-width: 70%;
   margin: 0 auto 3em auto;
-  /*background-color: #DBDEE3;*/
 }
 .content a {
   text-decoration: underline;
 }
 .content a:hover {
   color: grey;
+}
+.resume {
+  padding: 5em 0 3em 0;
+}
+.resume-head {
+  height: 15em;
+}
+.resume-head h1 {
+  margin-bottom: 1.2em;
+}
+.resume-head p {
+  display: inline-block;
 }
 footer {
   background: #5780C0 url("../images/concrete_wall.png");
@@ -72,6 +102,6 @@ footer {
   padding-top: 2em;
   color: #DBDEE3;
 }
-.social {
-  padding: 20;
+footer ul {
+  padding-bottom: 1em;
 }
