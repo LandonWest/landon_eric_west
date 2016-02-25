@@ -56,8 +56,10 @@ header a:hover, footer a:hover {
 }
 .banner {
   height: 560px;
-  background: #728E92 url("../images/Alcatraz.jpg");
   margin-bottom: 3em;
+}
+#alcatraz {
+  background: #728E92 url("../images/Alcatraz.jpg");
 }
 .headline h1 {
   display: inline-block;
@@ -72,6 +74,18 @@ header a:hover, footer a:hover {
   font-size: 2em;
   font-weight: 200;
   color: #ffffff;
+}
+#sutro {
+  background: #728E92 url("../images/sutro.jpg");
+}
+#sutro h1 {
+  /*position: relative;*/
+  display: inline;
+  float: right;
+  margin-top: 4em;
+  margin-right: -1em;
+  font-size: 6em;
+  color: white;
 }
 .content {
   max-width: 70%;
@@ -94,6 +108,10 @@ header a:hover, footer a:hover {
 }
 .resume-head p {
   display: inline-block;
+}
+.about-img {
+  width: 200px;
+  padding: 16px;
 }
 footer {
   background: #5780C0 url("../images/concrete_wall.png");
