@@ -68,7 +68,7 @@ header a:hover, footer a:hover {
 }
 .banner {
   height: 560px;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 #alcatraz {
   background: #728E92 url("../images/Alcatraz.jpg");
@@ -98,6 +98,18 @@ header a:hover, footer a:hover {
   margin-right: -1em;
   font-size: 6em;
   color: white;
+}
+#telegraph-hill {
+  height: 948px;
+  background: #728E92 url("../images/train.jpg") no-repeat;
+}
+#telegraph-hill h1 {
+  display: inline-block;
+  /*padding: 0 0.2em;*/
+  /*background-color: rgba(238,238,238, 0.5);*/
+  color: white;
+  font-size: 4.5em;
+  /*margin-top: 5.5em;*/
 }
 .content {
   max-width: 70%;

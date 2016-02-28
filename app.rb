@@ -15,3 +15,7 @@ end
 get '/projects' do
   erb :projects
 end
+
+get '/contact' do
+  erb :contact
+end
