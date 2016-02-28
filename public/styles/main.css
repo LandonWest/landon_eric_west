@@ -46,7 +46,7 @@ ul {
 }
 #patchatech ul {
   list-style: inside disc;
-  padding-bottom: 2em;
+  margin-bottom: 2em;
 }
 #patchatech img {
   padding: 1em;
@@ -123,11 +123,16 @@ header a:hover, footer a:hover {
 .resume-head p {
   display: inline-block;
 }
-.about-img {
-  width: 200px;
-  padding: 16px;
+.pic-row {
+  max-width: 942px;
+  padding-bottom: 1em;
+  /*margin: 0 auto;*/
 }
-
+.pic-row img {
+  width: 200px;
+  padding: 4px 12px 4px 0;
+  border-radius: 9%;
+}
 footer {
   background: #5780C0 url("../images/concrete_wall.png");
   height: 8em;
