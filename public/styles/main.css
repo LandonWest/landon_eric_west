@@ -145,6 +145,40 @@ header a:hover, footer a:hover {
   padding: 4px 12px 4px 0;
   border-radius: 9%;
 }
+button, input, select, textarea {
+  font-family : inherit;
+  font-size   : 100%;
+}
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 6px;
+  width: 432px;
+  font-size: 1em;
+  /*background-color: rgba(255,255,255,0.8);*/
+}
+label {
+  display: block;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+input {
+  display: block;
+  padding: 0.1em 0.3em;
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+input[type=text] {
+  width: 430px;
+  /*background-color: rgba(255,255,255,0.8);*/
+}
+input[type=email] {
+  width: 430px;
+}
+input[type=submit] {
+  width: 120px;
+  cursor: pointer;
+}
 footer {
   background: #5780C0 url("../images/concrete_wall.png");
   height: 8em;
