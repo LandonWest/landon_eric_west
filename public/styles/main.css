@@ -71,7 +71,7 @@ header a:hover, footer a:hover {
   margin-bottom: 2em;
 }
 #alcatraz {
-  background: #728E92 url("../images/Alcatraz.jpg");
+  background: #728E92 url("../images/alcatraz-medium.jpg");
 }
 .headline h1 {
   display: inline-block;
@@ -88,7 +88,7 @@ header a:hover, footer a:hover {
   color: #ffffff;
 }
 #sutro {
-  background: #728E92 url("../images/sutro.jpg");
+  background: #728E92 url("../images/sutro-medium.jpg");
 }
 #sutro h1 {
   /*position: relative;*/
@@ -101,7 +101,7 @@ header a:hover, footer a:hover {
 }
 #telegraph-hill {
   height: 948px;
-  background: #728E92 url("../images/train.jpg") no-repeat;
+  background: #728E92 url("../images/train-medium.jpg") no-repeat;
 }
 #telegraph-hill h1 {
   display: inline-block;
