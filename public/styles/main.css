@@ -88,7 +88,7 @@ header a:hover, footer a:hover {
   color: #ffffff;
 }
 #sutro {
-  background: #728E92 url("../images/sutro-medium.jpg");
+  background: #447FBB url("../images/sutro-medium.jpg");
 }
 #sutro h1 {
   /*position: relative;*/
@@ -99,17 +99,20 @@ header a:hover, footer a:hover {
   font-size: 6em;
   color: white;
 }
-#telegraph-hill {
+#train {
   height: 948px;
-  background: #728E92 url("../images/train-medium.jpg") no-repeat;
+  background: #8D8F84 url("../images/train-medium.jpg") no-repeat;
 }
-#telegraph-hill h1 {
+#train h1 {
   display: inline-block;
   /*padding: 0 0.2em;*/
   /*background-color: rgba(238,238,238, 0.5);*/
   color: white;
   font-size: 4.5em;
   /*margin-top: 5.5em;*/
+}
+#train a:hover {
+  color: #BCBBA9;
 }
 .content {
   max-width: 70%;
