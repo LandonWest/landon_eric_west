@@ -34,3 +34,14 @@
     </p>
   </section>
 </div>
+
+<script>
+  $(document).ready(function(){
+    if (top.location.pathname === '/success'){
+      $(".headline").before("<span class='notify'><%= @email_success %></span>");
+    }
+    setTimeout(function(){
+      $('.notify').fadeOut('slow');
+    }, 3500);
+  });
+</script>

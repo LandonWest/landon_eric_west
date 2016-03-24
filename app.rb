@@ -42,6 +42,6 @@ post '/contact' do
 end
 
 get '/success' do
-  @notification = "Thanks, Your message has been sent!"
+  @email_success = "Thanks, Your message has been sent!"
   erb :index
 end
