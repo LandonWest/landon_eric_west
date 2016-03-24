@@ -60,7 +60,6 @@ ul {
   padding: 1em;
 }
 .pt-orange {
-  /*color: #4BABD9;*/
   color: #FC9858
 }
 header ul {
@@ -99,7 +98,6 @@ header a:hover, footer a:hover {
   background: #447FBB url("../images/sutro-medium.jpg");
 }
 #sutro h1 {
-  /*position: relative;*/
   display: inline;
   float: right;
   margin-top: 3em;
@@ -113,11 +111,8 @@ header a:hover, footer a:hover {
 }
 #train h1 {
   display: inline-block;
-  /*padding: 0 0.2em;*/
-  /*background-color: rgba(238,238,238, 0.5);*/
   color: white;
   font-size: 4.5em;
-  /*margin-top: 5.5em;*/
 }
 #train a:hover {
   color: #BCBBA9;
@@ -149,7 +144,6 @@ header a:hover, footer a:hover {
 .pic-row {
   max-width: 942px;
   padding-bottom: 1em;
-  /*margin: 0 auto;*/
 }
 .pic-row img {
   width: 200px;
@@ -166,7 +160,6 @@ textarea {
   padding: 3px 6px;
   width: 432px;
   font-size: 1em;
-  /*background-color: rgba(255,255,255,0.8);*/
 }
 label {
   display: block;
@@ -181,7 +174,6 @@ input {
 }
 input[type=text] {
   width: 430px;
-  /*background-color: rgba(255,255,255,0.8);*/
 }
 input[type=email] {
   width: 430px;
