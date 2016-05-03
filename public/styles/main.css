@@ -115,7 +115,7 @@ header a:hover, footer a:hover {
   font-size: 4.5em;
 }
 #train a:hover {
-  color: #BCBBA9;
+  color: #808080;
 }
 .content {
   max-width: 70%;
@@ -150,6 +150,16 @@ header a:hover, footer a:hover {
   padding: 4px 12px 4px 0;
   border-radius: 9%;
 }
+.contact-info {
+  color: white;
+  width: 450px;
+}
+.contact-info span {
+  margin-left: 10px;
+}
+.form {
+  width: 440px;
+}
 button, input, select, textarea {
   font-family : inherit;
   font-size   : 100%;
@@ -158,7 +168,7 @@ textarea {
   display: block;
   margin-bottom: 10px;
   padding: 3px 6px;
-  width: 432px;
+  width: 430px;
   font-size: 1em;
 }
 label {
@@ -166,11 +176,12 @@ label {
   margin-bottom: 4px;
   color: #ffffff;
 }
-input {
+input, textarea {
   display: block;
-  padding: 0.1em 0.3em;
+  padding: 0.3em 0.3em;
   margin-bottom: 15px;
   font-size: 1em;
+  border: none;
 }
 input[type=text] {
   width: 430px;
@@ -179,9 +190,17 @@ input[type=email] {
   width: 430px;
 }
 input[type=submit] {
+  background-color: #808080;
+  color: white;
   width: 120px;
+  float: right;
   cursor: pointer;
+  transition: 0.5s, background-color;
 }
+input[type=submit]:hover {
+  background-color: #61656B;
+}
+
 footer {
   background: #5780C0 url("../images/concrete_wall.png");
   height: 8em;
