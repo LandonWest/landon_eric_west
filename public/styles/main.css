@@ -114,9 +114,6 @@ header a:hover, footer a:hover {
   color: white;
   font-size: 4.5em;
 }
-#train a:hover {
-  color: #808080;
-}
 .content {
   max-width: 70%;
   margin: 0 auto 3em auto;
@@ -156,6 +153,12 @@ header a:hover, footer a:hover {
 }
 .contact-info span {
   margin-left: 10px;
+}
+.contact-info a i {
+  font-size: 18px;
+}
+.contact-info a i:hover {
+  color: #DBDEE3;
 }
 .form {
   width: 440px;
