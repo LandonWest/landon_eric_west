@@ -5,18 +5,22 @@ get '/' do
 end
 
 get '/resume' do
+  @title = '| Resume'
   erb :resume
 end
 
 get '/about' do
+  @title = '| About'
   erb :about
 end
 
 get '/projects' do
+  @title = '| Projects'
   erb :projects
 end
 
 get '/contact' do
+  @title = '| Contact'
   erb :contact
 end
 
