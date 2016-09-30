@@ -30,11 +30,11 @@ post '/contact' do
     :to => 'landonwest5@gmail.com',
     :from => params[:email],
     :subject => params[:name] + ' has left you a message!',
-    :body => 'Name: ' + params[:name] + '; ' + 'Email: ' + params[:email] + '; ' + 'Message: ' + params[:message],
+    :body => 'Name: ' + params[:name] + "\n" + 'Email: ' + params[:email] + "\n\n" + 'Message: ' + params[:message],
     :via => :smtp,
     :via_options => {
       :address              => 'smtp.gmail.com',
-      :port                 => '587',
+      :port                 => '465',
       :enable_starttls_auto => true,
       :user_name            => ENV['GMAIL_USERNAME'],
       :password             => ENV['GMAIL_PASSWORD'],
