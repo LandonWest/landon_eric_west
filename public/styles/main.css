@@ -218,3 +218,17 @@ footer {
 footer ul {
   padding-bottom: 1em;
 }
+.fail-page {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.fail-page img {
+  padding: 20px 0 40px;
+}
+.fail-page h1 {
+  padding-top: 100px;
+}
+.fail-page p {
+  text-align: center;
+}
