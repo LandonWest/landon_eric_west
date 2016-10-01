@@ -29,7 +29,7 @@ post '/contact' do
   configure_pony
   begin
     Pony.mail({
-      :to => 'landonwest5@gmail.com',
+      :to => 'landonewest@gmail.com',
       :from => params[:email],
       :subject => params[:name] + ' has left you a message!',
       :body => 'Name: ' + params[:name] + "\n" + 'Email: ' + params[:email] + "\n\n" + 'Message: ' + params[:message],
@@ -51,11 +51,11 @@ def configure_pony
   Pony.options = {
     :via => :smtp,
     :via_options => {
-      :address              => 'smtp.gmail.com',
+      :address              => 'smtp.sendgrid.net',
       :port                 => '587',
       :enable_starttls_auto => true,
-      :user_name            => ENV['GMAIL_USERNAME'],
-      :password             => ENV['GMAIL_PASSWORD'],
+      :user_name            => ENV['SENDGRID_USERNAME'],
+      :password             => ENV['SENDGRID_PASSWORD'],
       :authentication       => :plain, # :plain, :login, :cram_md5, no auth by default
       :domain               => "heroku.com" # the HELO domain provided by the client to the server
     }
