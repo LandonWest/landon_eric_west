@@ -32,7 +32,9 @@ post '/contact' do
       :to => 'landonewest@gmail.com',
       :from => params[:email],
       :subject => params[:name] + ' has left you a message!',
-      :body => 'Name: ' + params[:name] + "\n" + 'Email: ' + params[:email] + "\n\n" + 'Message: ' + params[:message],
+      :body => "Name: #{params[:name]}\n
+                Email: #{params[:email]}\n\n
+                Message:  #{params[:message]}"
     })
     redirect '/success'
   rescue
