@@ -1,23 +1,23 @@
-<div id="train">
+<section class="full-pg" id="contact">
   <div class="content">
-    <h1>Contact Me</h1>
-    <p class="contact-info">
-      I'm open to new opportunities, colaboration, and comments. Drop me a line or find me on social media.
-        <span>
-          <a href="https://github.com/LandonWest" title="github" target="_blank"><i class="fa fa-github fa-1x"></i></a>&nbsp
-          <a href="http://codepen.io/Lando726/" title="codepen" target="_blank"><i class="fa fa-codepen fa-2x"></i></a>&nbsp
-          <a href="https://twitter.com/Lando726" title="twitter" target="_blank"><i class="fa fa-twitter fa-1x"></i></a>&nbsp
-          <a href="https://www.linkedin.com/in/landonwest" title="linkedin" target="_blank"><i class="fa fa-linkedin fa-1x"></i></a>
-        </span>
-    </p>
-    <form class="form" action="/contact" method="post" autocomplete="nope">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Chuck Norris" required>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="chuck@roundhouse.com" required>
-      <label for="message">Message</label>
-      <textarea id="message" name="message"rows="8" cols="40" placeholder="Dear Landon, I could use skills like yours. Let's talk." required></textarea>
-      <input type="submit" value="Send">
+    <h2 class="form-header">Contact</h2>
+    <form action="/layout" method="post">
+      <input type="text"  name="name"    placeholder="*Full Name" required >
+      <input type="email" name="email"   placeholder="*Email"     required >
+      <input type="text"  name="twitter" placeholder="@Twitter?" >
+      <textarea           name="message" placeholder="*Message" rows="8" cols="30" required ></textarea><br>
+      <!-- <input type="submit" value="Submit"> -->
+      <button type="submit">Submit</button>
     </form>
   </div>
-</div>
+</section>
+
+<!-- contact form success notification -->
+<script type="text/javascript">
+  if (top.location.pathname === '/success') {
+    $(".headline").before("<span class='notify'><%= @email_success %></span>");
+  }
+  setTimeout(function() {
+    $('.notify').fadeOut('slow');
+  }, 3500);
+</script>

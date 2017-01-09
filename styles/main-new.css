@@ -1,0 +1,25 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - styles/main-new.scss
+
+Backtrace:
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `read'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/plugin.rb:109:in `method_missing'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/bin/sass:23:in `load'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/bin/sass:23:in `<main>'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/bin/ruby_executable_hooks:15:in `eval'
+/Users/landonwest/.rvm/gems/ruby-2.3.0@landon_eric_west/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - styles/main-new.scss"; }

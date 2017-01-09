@@ -1,0 +1,189 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans";
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round";
+@import "https://fonts.googleapis.com/css?family=Ek+Mukta:600|Open+Sans";
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Strait";
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+  text-align: center; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Strait", sans-serif; }
+
+div.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 2em;
+  color: #fff; }
+
+.full-pg {
+  min-height: 100vh; }
+
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 60px; }
+  nav ul {
+    list-style: none;
+    padding-left: 0; }
+  nav li {
+    display: inline-block;
+    margin-right: 0.6em; }
+    nav li:last-child {
+      margin-right: 0; }
+  nav a {
+    color: #404040;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize; }
+    nav a:hover {
+      text-decoration: underline; }
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  z-index: 1; }
+
+#banner {
+  display: none; }
+
+h1.headline {
+  font-size: 5em;
+  font-family: "Strait", sans-serif; }
+
+.sub-headline {
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif; }
+
+a.scroll-arrow {
+  text-decoration: none;
+  color: white;
+  transition: font-size 0.35s, color 0.35s; }
+  a.scroll-arrow:hover {
+    font-size: 1.3em;
+    color: #F16745; }
+
+#about .inline-list {
+  margin: 42px auto; }
+#about i {
+  color: #fff; }
+
+.project-tile {
+  background-color: #ddd;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 16px; }
+
+h2.form-header {
+  background: #404040;
+  padding: 0.5em;
+  margin: 0; }
+
+form {
+  background-color: #fff;
+  padding: 1em 1em 1.5em;
+  text-align: left; }
+  form input[type="text"], form input[type="email"], form textarea {
+    padding: 0.25em;
+    margin: 1em 0;
+    width: 95%;
+    font-size: 1em;
+    font-family: "Helvetica Neue", sans-serif;
+    border: 0;
+    border-bottom: 0.01em solid #ddd;
+    outline: none; }
+    form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+      border-bottom: 1px solid #404040; }
+  form button {
+    padding: 1em 10%;
+    font-size: 1em;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.35s; }
+    form button:hover {
+      cursor: pointer;
+      background-color: #404040;
+      color: #fff; }
+
+#home {
+  background-color: #404040; }
+
+#about {
+  background-color: #4CC3D9;
+  align-items: center; }
+
+#projects {
+  background-color: #93648D; }
+
+#contact {
+  background-color: #7BC8A4; }
+
+#outro {
+  background-color: #F16745; }
+  #outro h1 {
+    margin-top: 4em;
+    font-size: 3em;
+    color: #404040; }
+  #outro h2 {
+    color: #404040; }
+
+footer {
+  text-align: center;
+  padding-top: 4em;
+  color: #404040; }
+  footer ul {
+    padding-bottom: 1em; }
+  footer i {
+    color: #fff;
+    transition: color 0.35s; }
+    footer i:hover {
+      color: #404040; }
+
+#footer-arrow:hover {
+  color: #404040; }
+
+.notify {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #7BC8A4;
+  color: #fff;
+  padding: 20px 60px;
+  font-weight: bold;
+  width: 300px;
+  margin: 0 auto;
+  z-index: 2; }
+
+.inline-list {
+  padding-left: 0; }
+  .inline-list li {
+    display: inline;
+    padding: 0 5%; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media screen and (min-width: 570px) {
+  div.content {
+    width: 65%; }
+
+  form {
+    padding: 2.5em 2em 3em; }
+    form input[type="text"], form input[type="email"], form textarea {
+      padding: 0.5em;
+      margin: 1em 0;
+      width: 97%; }
+
+  nav li {
+    margin-right: 2em; } }
+
+/*# sourceMappingURL=main-new.css.map */

@@ -1,31 +1,12 @@
 require 'sinatra'
 require 'pony'
+require 'pry'
 
 get '/' do
   erb :index
 end
 
-get '/resume' do
-  @title = '| Resume'
-  erb :resume
-end
-
-get '/about' do
-  @title = '| About'
-  erb :about
-end
-
-get '/projects' do
-  @title = '| Projects'
-  erb :projects
-end
-
-get '/contact' do
-  @title = '| Contact'
-  erb :contact
-end
-
-post '/contact' do
+post '/layout' do
   configure_pony
   begin
     Pony.mail({
@@ -49,6 +30,16 @@ get '/success' do
   erb :index
 end
 
+# get '/resume' do
+#   @title = '| Resume'
+#   erb :resume
+# end
+#
+# get '/projects' do
+#   @title = '| Projects'
+#   erb :projects
+# end
+
 def configure_pony
   Pony.options = {
     :via => :smtp,
@@ -58,8 +49,8 @@ def configure_pony
       :enable_starttls_auto => true,
       :user_name            => ENV['SENDGRID_USERNAME'],
       :password             => ENV['SENDGRID_PASSWORD'],
-      :authentication       => :plain, # :plain, :login, :cram_md5, no auth by default
-      :domain               => "heroku.com" # the HELO domain provided by the client to the server
+      :authentication       => :plain,
+      :domain               => "heroku.com"
     }
   }
 end

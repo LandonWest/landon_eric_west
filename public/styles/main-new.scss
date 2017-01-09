@@ -1,0 +1,252 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round';
+@import 'https://fonts.googleapis.com/css?family=Ek+Mukta:600|Open+Sans';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Strait';
+
+// site colors:
+$orange: #F16745;
+$yellow: #FFC65D;
+$green: #7BC8A4;
+$blue: #4CC3D9;
+$purple: #93648D;
+$grey: #ddd;
+$grey-dark: #404040;
+$white: #fff;
+
+// font families:
+$font-fam-neue: "Helvetica Neue", sans-serif;
+$font-fam-open: 'Open Sans', sans-serif;
+$font-fam-strt: 'Strait', sans-serif;
+
+// styles:
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-fam-open;
+  background-color: $white;
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-fam-strt;
+}
+div.content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10% 2em;
+  color: #fff;
+}
+.full-pg {
+  min-height: 100vh;
+}
+// start navbar styles
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.95);
+  height: 60px;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    margin-right: 0.6em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: #404040;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  z-index: 1;
+}
+// end navbar styles
+
+#banner {
+  display: none;
+}
+h1.headline {
+  font-size: 5em;
+  font-family: $font-fam-strt;
+}
+.sub-headline {
+  font-weight: normal;
+  font-family: $font-fam-open;
+}
+a.scroll-arrow {
+  text-decoration: none;
+  color: white;
+  transition: font-size 0.35s, color 0.35s;
+
+  &:hover {
+    font-size: 1.3em;
+    color: #F16745;
+  }
+}
+// begin about styles
+#about {
+  .inline-list {
+    margin: 42px auto;
+  }
+  i {
+    color: $white;
+  }
+}
+// end about styles
+// begin projects styles
+.project-tile {
+  background-color: $grey;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 16px;
+}
+// end projects styles
+
+// begin form styles
+h2.form-header {
+    background: $grey-dark;
+    padding: 0.5em;
+    margin: 0;
+  }
+form {
+  background-color: $white;
+  padding: 1em 1em 1.5em;
+  text-align: left;
+
+  input[type="text"], input[type="email"], textarea {
+    padding: 0.25em;
+    margin: 1em 0;
+    width: 95%;
+    font-size: 1em;
+    font-family: $font-fam-neue;
+    border: 0;
+    border-bottom: 0.01em solid $grey;
+    outline: none;
+
+    &:focus {
+      border-bottom: 1px solid $grey-dark;
+    }
+  }
+  button {
+    padding: 1em 10%;
+    font-size: 1em;
+    background-color: $grey;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.35s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $grey-dark;
+      color: $white;
+    }
+  }
+}
+// end form style
+
+#home {
+  background-color: $grey-dark;
+}
+#about {
+  background-color: $blue;
+  align-items: center;
+}
+#projects {
+  background-color: $purple;
+}
+#contact {
+  background-color: $green;
+}
+#outro {
+  background-color: $orange;
+
+  h1 {
+    margin-top: 4em;
+    font-size: 3em;
+    color: $grey-dark;
+  }
+  h2 {
+    color: $grey-dark;
+  }
+}
+footer {
+  // background: #5780C0 url("../images/concrete_wall.png");
+  // height: 8em;
+  text-align: center;
+  padding-top: 4em;
+  color: $grey-dark;
+
+  ul {
+    padding-bottom: 1em;
+  }
+  i {
+    color: $white;
+    transition: color 0.35s;
+    &:hover {
+      color: $grey-dark;
+    }
+  }
+}
+#footer-arrow:hover {
+  color: $grey-dark;
+}
+.notify {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: $green;
+  color: #fff;
+  padding: 20px 60px;
+  font-weight: bold;
+  width: 300px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.inline-list {
+  padding-left: 0;
+  li {
+    display: inline;
+    padding: 0 5%;
+  }
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// begin media query > small
+@media screen and (min-width: 570px) {
+  div.content {
+    width: 65%;
+  }
+  form {
+    padding: 2.5em 2em 3em;
+
+    input[type="text"], input[type="email"], textarea {
+      padding: 0.5em;
+      margin: 1em 0;
+      width: 97%;
+    }
+  } // end form
+  nav li {
+    margin-right: 2em;
+  }
+
+} // end mediaquery

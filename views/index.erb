@@ -1,47 +1,23 @@
-<div class="banner" id="alcatraz">
-  <div class="headline">
-    <h1>Landon Eric West</h1>
-    <p>building awesome websites that look good and make me happy</p>
+<section class="full-pg" id="home">
+  <div class="content" id="banner">
+    <h1 class="headline">Landon Eric West</h1>
+    <h2 class="sub-headline">Making awesome websites that look great and make me happy</h2>
+    <a href="#about" class="scroll-arrow" id="headline-arrow">
+      <i class="fa fa-caret-down fa-3x"></i>
+    </a>
   </div>
-</div>
-<div class="content">
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I like to explore, discover, create, figure out how things work, build, and imagine. I appreciate the past, and I'm looking with wide-eyed optimism towards the future. I'm here to soak it all in and let knowledge fill and enlarge me. I seek to continually grow and share my journey with others. I want to build awesome websites that look good and make people happy. Find out more about me <a href="/about">here</a>.
-    </p>
-  </section>
-  <section class="projects">
-    <h2>Projects</h2>
-    <p>
-      <a href="/projects#patchatech"><span>PatchaTech - August 2014</span></a><br>
-      PatchaTech was conceived as a capstone project by myself and two other students of DevPoint Labs. The idea was simple: create a website that fills the need for free, peer-submitted and reviewed tutorials that tackle common issues with today's modern devices. By making PatchaTech your go-to site for gaining new knowledge and skills, you'll end up saving a fistful of dollars (and more than a few headaches!) fixing your devices yourself.
-    </p>
-  </section>
-  <section class="experience">
-    <h2>Experience</h2>
-    <p>
-      I have a well-rounded background, with valuable experience in operations and logistics, graphic design and printing, small business marketing, and customer service. I am a recent graduate of DevPoint Labs, where I learned and gained hands-on experience using full-stack web development tools such as: Ruby, Rails, HTML 5, CSS 3, and JavaScript. I have an exceptional ability to work well with others. My patience and strong work ethic set me apart from the crowd.
-    </p>
-    <p>
-      Check out my resume <a href="/resume">here</a>.
-    </p>
-  </section>
-  <section class="Contact">
-    <h2>Contact</h2>
-    <p>
-      I'm open to new opportunities, colaboration, and comments! <a href="/contact">Drop me a line</a> or find me on social media.
-    </p>
-  </section>
-</div>
+  <!-- refactor the nav into a partial & load it here and any other pages you add-->
+  <nav>
+    <ul>
+      <li><a href="#home" id="home-link">home</a></li>
+      <li><a href="#about" id="about-link">about</a></li>
+      <li><a href="#projects" id="projects-link">projects</a></li>
+      <li><a href="#contact" id="contact-link">contact</a></li>
+    </ul>
+  </nav>
+</section>
 
-<script>
-  $(document).ready(function(){
-    if (top.location.pathname === '/success'){
-      $(".headline").before("<span class='notify'><%= @email_success %></span>");
-    }
-    setTimeout(function(){
-      $('.notify').fadeOut('slow');
-    }, 3500);
-  });
-</script>
+<%= erb :about %>
+<%= erb :projects %>
+<%= erb :contact %>
+<%= erb :outro %>
